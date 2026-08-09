@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "correlated-abiogenesis"
+version = "0.1.0"
+description = "Reproducible calculations and simulations for the correlated abiogenesis rare-basin model"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Eric Rosenn"}
+]
+dependencies = [
+  "matplotlib>=3.8,<4",
+  "numpy>=1.26,<3",
+  "scipy>=1.11,<2"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10"
+]
+
+[project.scripts]
+reproduce-appendix-b = "correlated_abiogenesis.appendix_b:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]

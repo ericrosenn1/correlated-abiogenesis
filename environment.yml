@@ -1,0 +1,10 @@
+name: correlated-abiogenesis
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10,<3.13
+  - matplotlib>=3.8,<4
+  - numpy>=1.26,<3
+  - scipy>=1.11,<2
+  - pytest>=8,<10
+  - pip

@@ -1,0 +1,51 @@
+{
+  "cluster_process": {
+    "dispersal_sigma": 0.65,
+    "maximum_pair_distance": 12.0,
+    "mean_offspring": 4.4,
+    "pair_distance_bins": 30,
+    "parent_intensity": 0.23222222222222222,
+    "window_size": 60.0
+  },
+  "crossover": {
+    "alpha": 2.0,
+    "basin_mass": 1000000.0,
+    "beta": 3.0,
+    "n_origins": 1,
+    "radius_max": 38.0,
+    "radius_min": 0.0,
+    "radius_points": 700,
+    "searched_volume": 7.0,
+    "target_volume": 1.0,
+    "xi_values": [
+      1.0,
+      2.0,
+      5.0
+    ]
+  },
+  "edge_treatment": "periodic square window with minimum-image distances",
+  "known_center_estimator": {
+    "lower_quantile": 0.025,
+    "replicates": 10000,
+    "sample_sizes": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      30,
+      100
+    ],
+    "true_xi": 2.0,
+    "upper_quantile": 0.975
+  },
+  "master_seed": 7,
+  "pair_correlation_estimator": "unordered annulus pair counts divided by homogeneous-Poisson expected counts",
+  "seed_strategy": "numpy.random.SeedSequence(master_seed).spawn(3)",
+  "software": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.1",
+    "python": "3.12.10",
+    "scipy": "1.18.0"
+  }
+}
