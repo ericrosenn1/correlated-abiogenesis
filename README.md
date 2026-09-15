@@ -1,5 +1,9 @@
 # Correlated Abiogenesis
 
+[![Tests](https://github.com/ericrosenn1/correlated-abiogenesis/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ericrosenn1/correlated-abiogenesis/actions/workflows/tests.yml) [![Python 3.10-3.12](https://img.shields.io/badge/Python-3.10--3.12-3776AB?logo=python&logoColor=white)](https://github.com/ericrosenn1/correlated-abiogenesis/blob/main/pyproject.toml) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ericrosenn1/correlated-abiogenesis/blob/main/LICENSE) [![Release](https://img.shields.io/github/v/release/ericrosenn1/correlated-abiogenesis?display_name=tag&sort=semver)](https://github.com/ericrosenn1/correlated-abiogenesis/releases)
+
+[![CITATION.cff](https://img.shields.io/badge/CITATION.cff-cite-555.svg)](https://github.com/ericrosenn1/correlated-abiogenesis/blob/main/CITATION.cff) [![Last commit](https://img.shields.io/github/last-commit/ericrosenn1/correlated-abiogenesis/main?label=last%20commit)](https://github.com/ericrosenn1/correlated-abiogenesis/commits/main) [![Contributors](https://img.shields.io/github/contributors/ericrosenn1/correlated-abiogenesis)](https://github.com/ericrosenn1/correlated-abiogenesis/graphs/contributors) [![Repository size](https://img.shields.io/github/repo-size/ericrosenn1/correlated-abiogenesis)](https://github.com/ericrosenn1/correlated-abiogenesis)
+
 This repository contains the calculations and simulations supporting Appendix B and Figures 9–10 of the manuscript “Correlated Abiogenesis and the Sign of the Bayesian Update: Why a Second Origin of Life Need Not Imply an Abundant Galaxy.”
 
 ## Scope

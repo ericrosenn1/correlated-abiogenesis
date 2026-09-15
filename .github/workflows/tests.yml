@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   test:
@@ -26,6 +27,18 @@ jobs:
       - name: Compile
         run: python -m compileall -q src scripts tests
       - name: Test
+        if: matrix.python-version != '3.12'
         run: python -m pytest
+      - name: Test with coverage
+        if: matrix.python-version == '3.12'
+        run: python -m pytest --cov=correlated_abiogenesis --cov-report=xml:coverage.xml
       - name: Reproduce Appendix B smoke test
         run: python -m correlated_abiogenesis.appendix_b --quick --output-dir outputs-ci
+      - name: Upload coverage to Codecov
+        if: matrix.python-version == '3.12'
+        uses: codecov/codecov-action@v7
+        with:
+          files: coverage.xml
+          disable_search: true
+          fail_ci_if_error: false
+          use_oidc: true
